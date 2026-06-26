@@ -12,7 +12,7 @@
         <meta name="author" content="Serge Tahé">
       
       
-        <link rel="canonical" href="https://stahe.github.io/pt-php5-juillet-2011/calculo-de-impostos-exercicio-com-xml.html">
+        <link rel="canonical" href="https://stahe.github.io/pt-php5-juillet-2011/exercicio-impots-com-xml.html">
       
       
         <link rel="prev" href="processamento-de-documentos-xml-simplexml01.html">
@@ -27,7 +27,7 @@
     
     
       
-        <title>13. Cálculo de impostos: Exercício com XML - Uma introdução ao PHP5 através de exemplos</title>
+        <title>13. Exercício IMPOTS com XML - Uma introdução ao PHP5 através de exemplos</title>
       
     
     
@@ -54,6 +54,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -90,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#13-calculo-de-impostos-exercicio-com-xml" class="md-skip">
+        <a href="#13-exercicio-impots-com-xml" class="md-skip">
           Skip to content
         </a>
       
@@ -126,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              13. Cálculo de impostos: Exercício com XML
+              13. Exercício IMPOTS com XML
             
           </span>
         </div>
@@ -328,14 +330,14 @@
   
   
     <li class="md-nav__item">
-      <a href="configurar-um-ambiente-de-desenvolvimento.html" class="md-nav__link">
+      <a href="instalacao-de-um-ambiente-de-trabalho.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Configurar um ambiente de desenvolvimento
+    2. Instalação de um ambiente de trabalho
   
 
     
@@ -355,14 +357,14 @@
   
   
     <li class="md-nav__item">
-      <a href="nocoes-basicas-de-php.html" class="md-nav__link">
+      <a href="nocoes-basicas-do-php.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Noções básicas de PHP
+    3. Noções básicas do PHP
   
 
     
@@ -382,14 +384,14 @@
   
   
     <li class="md-nav__item">
-      <a href="exercicio-de-aplicacao---calculo-de-impostos.html" class="md-nav__link">
+      <a href="exercicio-pratico---impots.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. Exercício de aplicação – Cálculo de impostos
+    4. Exercício prático - IMPOTS
   
 
     
@@ -409,14 +411,14 @@
   
   
     <li class="md-nav__item">
-      <a href="objetos.html" class="md-nav__link">
+      <a href="os-objetos.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Objetos
+    5. Os objetos
   
 
     
@@ -436,14 +438,14 @@
   
   
     <li class="md-nav__item">
-      <a href="exercicio-pratico---calculo-de-impostos-com-objetos-impots03.html" class="md-nav__link">
+      <a href="exercicio-pratico----impots-com-objetos-impots03.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Exercício Prático – Cálculo de Impostos com Objetos (impots_03)
+    6. Exercício prático — IMPOTS com objetos (impots_03)
   
 
     
@@ -463,14 +465,14 @@
   
   
     <li class="md-nav__item">
-      <a href="utilizacao-do-sgbd-mysql.html" class="md-nav__link">
+      <a href="utilizacao-do-sgbd-e-do-mysql.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. Utilização do SGBD MySQL
+    7. Utilização do SGBD e do MySql
   
 
     
@@ -490,14 +492,14 @@
   
   
     <li class="md-nav__item">
-      <a href="exercicio-de-calculo-de-impostos-com-mysql.html" class="md-nav__link">
+      <a href="exercicio-impots-com-mysql.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    8. Exercício de cálculo de impostos com MySQL
+    8. Exercício IMPOTS com MySQL
   
 
     
@@ -517,14 +519,14 @@
   
   
     <li class="md-nav__item">
-      <a href="funcoes-de-rede-do-php.html" class="md-nav__link">
+      <a href="as-funcoes-de-rede-do-php.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. Funções de rede do PHP
+    9. As funções de rede do PHP
   
 
     
@@ -544,14 +546,14 @@
   
   
     <li class="md-nav__item">
-      <a href="servidores-php.html" class="md-nav__link">
+      <a href="servidores-em-php.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. Servidores PHP
+    10. Servidores em PHP
   
 
     
@@ -571,14 +573,14 @@
   
   
     <li class="md-nav__item">
-      <a href="calculo-de-impostos-exercicio-com-um-servico-web-e-uma-arquitetura-de-tres-camadas.html" class="md-nav__link">
+      <a href="exercicio-impots-com-um-servico-web-e-uma-arquitetura-de-tres-camadas.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    11. Cálculo de impostos: Exercício com um serviço Web e uma arquitetura de três camadas
+    11. Exercício IMPOTS com um serviço WEB e uma arquitetura de três camadas
   
 
     
@@ -641,7 +643,7 @@
   <span class="md-ellipsis">
     
   
-    13. Cálculo de impostos: Exercício com XML
+    13. Exercício IMPOTS com XML
   
 
     
@@ -652,14 +654,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="calculo-de-impostos-exercicio-com-xml.html" class="md-nav__link md-nav__link--active">
+      <a href="exercicio-impots-com-xml.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    13. Cálculo de impostos: Exercício com XML
+    13. Exercício IMPOTS com XML
   
 
     
@@ -731,57 +733,58 @@
 
 
 
-<h1 id="13-calculo-de-impostos-exercicio-com-xml">13. <span style="color: #365f91">Cálculo de impostos: Exercício com XML</span></h1>
-<p>Neste exercício, que já estudámos várias vezes, o servidor devolve os resultados ao cliente na forma de um fluxo XML.</p>
-<p><a id="refheading400061881943603"></a></p>
+<p><span id="refheading400041881943603" name="refheading400041881943603" class="odt-bookmark-anchor"></span></p>
+<h1 id="13-exercicio-impots-com-xml">13. <span style="color: #365f91">Exercício IMPOTS com XML</span></h1>
+<p>Neste exercício, já estudado inúmeras vezes, o servidor devolve os resultados ao cliente sob a forma de um fluxo XML.</p>
+<p><span id="refheading400061881943603" name="refheading400061881943603" class="odt-bookmark-anchor"></span></p>
 <h2 id="131-o-servidor-impots_05b_web">13.1. <span style="color: #4f81bd">O servidor (impots_05B_web)</span></h2>
-<p>O serviço web de cálculo de impostos escrito anteriormente tem uma arquitetura em camadas:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000456000000DB13FE6952.png" width="555" height="109" style="display:inline-block; margin:4px;width:14.684cm;height:2.896cm;" class="odt-zoomable" data-zoom-src="images/1000000000000456000000DB13FE6952.png" /></td></tr></table>
+<p>O serviço web de cálculo de impostos descrito anteriormente tem uma arquitetura em camadas:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000456000000DB13FE6952.png" width="555" height="110" style="display:inline-block; margin:4px;width:14.684cm;height:2.898cm;" class="odt-zoomable" data-zoom-src="images/1000000000000456000000DB13FE6952.png" /></td></tr></table>
 
-<p>No exemplo anterior, o serviço web enviava uma das duas linhas seguintes aos seus clientes:</p>
+<p>No exemplo anterior, o serviço web enviava aos seus clientes uma das duas linhas seguintes:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;erreur&gt;message d&#39;erreur&lt;/erreur&gt;
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&lt;impot&gt;montant de l&#39;impôt&lt;/impot&gt;
 </code></pre></div>
-<p>Este não é um documento XML bem formado, pois falta-lhe uma tag raiz. O novo serviço web enviará a sua resposta no seguinte formato:</p>
+<p>Este não é um documento XML bem formado, uma vez que não possui uma baliza raiz. O novo serviço web enviará a sua resposta com o seguinte formato:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&lt;reponse&gt;&lt;erreur&gt;message d&#39;erreur&lt;/erreur&gt;&lt;/reponse&gt;
 </code></pre></div>
 <p>ou</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&lt;reponse&gt;&lt;impot&gt;montant de l&#39;impôt&lt;/impot&gt;&lt;/reponse&gt;
 </code></pre></div>
-<p>Em ambos os casos, a resposta é um documento XML bem formado que pode ser processado pelo módulo [simpleXML].</p>
-<p>Na arquitetura de três camadas, apenas a camada [web] precisa de ser modificada. O seu código [impots_05B_web] passa a ser o seguinte:</p>
+<p>Em ambos os casos, a resposta é um documento XML válido que pode ser processado pelo módulo [simpleXML].</p>
+<p>No esquema de três camadas, apenas a camada [web] deve ser alterada. O seu código [impots_05B_web] passa a ser o seguinte:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// business layer</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// camada de negócio</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">require_once</span><span style="color:#008080"> </span><span style="color:#008000">&quot;impots_05_metier.php&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// error management</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// gestão de erros</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span><span style="color:#008000">&quot;display_errors&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;off&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// uTF-8 header</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// cabeçalho UTF-8</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">header(</span><span style="color:#008000">&quot;Content-Type: text/plain; charset=utf-8&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// ------------------------------------------------------------------------------</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// tax web service</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// definition of constants</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// o serviço web das finanças</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// definição de constantes</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$HOTE</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;localhost&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$PORT</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">3306</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$BASE</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;dbimpots&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$USER</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;root&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$PWD</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the data required to calculate the tax has been placed in table mysqL $TABLE</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// belonging to the $BASE database. The table has the following structure</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// limits decimal(10,2), coeffR decimal(6,2), coeffN decimal(10,2)</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// taxable person parameters (marital status, number of children, annual salary)</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// are sent by the customer in the form params=marital status, number of children, annual salary</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// results (marital status, number of children, annual salary, tax payable) are returned to the customer</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// in the form &lt;impot&gt;impot&lt;/impot&gt;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// or as &lt;error&gt;error&lt;/error&gt;, if parameters are invalid</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// retrieve the [business] layer in the session</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// os dados necessários para o cálculo do imposto foram inseridos na tabela mysqL $TABLE</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">//, pertencente à base de dados $BASE. A tabela tem a seguinte estrutura</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// limites decimal(10,2), coeffR decimal(6,2), coeffN decimal(10,2)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// os parâmetros dos contribuintes (estado civil, número de filhos, salário anual)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// são enviados pelo cliente no formato params=estado civil, número de filhos, salário anual</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// os resultados (estado civil, número de filhos, salário anual, imposto a pagar) são devolvidos ao cliente</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// na forma &lt;imposto&gt;imposto&lt;/imposto&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// ou no formato &lt;erro&gt;erro&lt;/erro&gt;, se os parâmetros forem inválidos</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// recupera-se a camada [métier] na sessão</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">session_start();</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(!</span><span style="font-weight:bold;color:#000000">isset</span><span style="color:#000000">(</span><span style="color:#0000ff">$_SESSION</span><span style="color:#000000">[</span><span style="color:#008000">&#x27;metier&#x27;</span><span style="color:#000000">]))</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// instantiation of the [dao] layer and the [business] layer</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// instanciação da camada [dao] e da camada [métier]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">try</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#0000ff">$_SESSION</span><span style="color:#000000">[</span><span style="color:#008000">&#x27;metier&#x27;</span><span style="color:#000000">]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">new</span><span style="color:#008080"> </span><span style="color:#000000">ImpotsMetier(</span><span style="font-weight:bold;color:#000000">new</span><span style="color:#008080"> </span><span style="color:#000000">ImpotsDaoWithMySQL(</span><span style="color:#0000ff">$HOTE</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$PORT</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$BASE</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$USER</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$PWD</span><span style="color:#000000">));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">catch</span><span style="color:#008080"> </span><span style="color:#000000">(ImpotsException</span><span style="color:#008080"> </span><span style="color:#0000ff">$ie</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
@@ -790,86 +793,86 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$metier</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#0000ff">$_SESSION</span><span style="color:#000000">[</span><span style="color:#008000">&#x27;metier&#x27;</span><span style="color:#000000">];</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// retrieve the line sent by the client</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// recupera-se a linha enviada pelo cliente</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$params</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">utf8_encode(htmlspecialchars(strtolower(trim(</span><span style="color:#0000ff">$_POST</span><span style="color:#000000">[</span><span style="color:#008000">&#x27;params&#x27;</span><span style="color:#000000">]))));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">//print &quot;parameters received --&gt; $params\n&quot;;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">//print &quot;parâmetros recebidos --&gt; $params\n&quot;;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$items</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">explode(</span><span style="color:#008000">&quot;,&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$params</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// there must be only 3 parameters</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// só deve haver 3 parâmetros</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(count(</span><span style="color:#0000ff">$items</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">!=</span><span style="color:#008080"> </span><span style="color:#000080">3</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&lt;reponse&gt;&lt;erreur&gt;[</span><span style="color:#0000ff">$params</span><span style="color:#008000">] : nombre de paramètres invalides&lt;/erreur&gt;&lt;/reponse&gt;\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">}</span><span style="font-style:italic;color:#808080">//if</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// first parameter (marital status) must be yes/no</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}//if</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// o primeiro parâmetro (estado civil) deve ser sim/não</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$marié</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">trim(</span><span style="color:#0000ff">$items</span><span style="color:#000000">[</span><span style="color:#000080">0</span><span style="color:#000000">]);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$marié</span><span style="color:#008080"> </span><span style="color:#000000">!=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;oui&quot;</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">and</span><span style="color:#008080"> </span><span style="color:#0000ff">$marié</span><span style="color:#008080"> </span><span style="color:#000000">!=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;non&quot;</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&lt;reponse&gt;&lt;erreur&gt;[</span><span style="color:#0000ff">$params</span><span style="color:#008000">] : 1er paramètre invalide&lt;/erreur&gt;&lt;/reponse&gt;\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">}</span><span style="font-style:italic;color:#808080">//if</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the second parameter (number of children) must be an integer</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}//se</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// o segundo parâmetro (número de filhos) deve ser um número inteiro</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(!preg_match(</span><span style="color:#008000">&quot;/^\s*(\d+)\s*$/&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$items</span><span style="color:#000000">[</span><span style="color:#000080">1</span><span style="color:#000000">],</span><span style="color:#008080"> </span><span style="color:#0000ff">$champs</span><span style="color:#000000">))</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&lt;reponse&gt;&lt;erreur&gt;[</span><span style="color:#0000ff">$params</span><span style="color:#008000">] : 2ième paramètre invalide&lt;/erreur&gt;&lt;/reponse&gt;\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">}</span><span style="font-style:italic;color:#808080">//if</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}//se</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$enfants</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#0000ff">$champs</span><span style="color:#000000">[</span><span style="color:#000080">1</span><span style="color:#000000">];</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the third parameter (salary) must be an integer</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// o terceiro parâmetro (salário) deve ser um número inteiro</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(!preg_match(</span><span style="color:#008000">&quot;/^\s*(\d+)\s*$/&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$items</span><span style="color:#000000">[</span><span style="color:#000080">2</span><span style="color:#000000">],</span><span style="color:#008080"> </span><span style="color:#0000ff">$champs</span><span style="color:#000000">))</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&lt;reponse&gt;&lt;erreur&gt;[</span><span style="color:#0000ff">$params</span><span style="color:#008000">] : 3ième paramètre invalide&lt;/erreur&gt;&lt;/reponse&gt;\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">}</span><span style="font-style:italic;color:#808080">//if</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}//se</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$salaire</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#0000ff">$champs</span><span style="color:#000000">[</span><span style="color:#000080">1</span><span style="color:#000000">];</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// tax calculation</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcula-se o imposto</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$impôt</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#0000ff">$metier</span><span style="color:#000000">-&gt;calculerImpot(</span><span style="color:#0000ff">$marié</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$enfants</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$salaire</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// return the result</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// retorna-se o resultado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&lt;reponse&gt;&lt;impot&gt;</span><span style="color:#0000ff">$impôt</span><span style="color:#008000">&lt;/impot&gt;&lt;/reponse&gt;\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// end</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// fim</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
 </code></pre></div>
 
-<p>O formato da resposta do serviço web é modificado nas linhas 35, 47, 53, 58, 64 e 71.</p>
-<p><a id="refheading400081881943603"></a></p>
+<p>O formato da resposta do serviço web é alterado nas linhas 35, 47, 53, 58, 64 e 71.</p>
+<p><span id="refheading400081881943603" name="refheading400081881943603" class="odt-bookmark-anchor"></span></p>
 <h2 id="132-o-cliente-client_impots_05b_web">13.2. <span style="color: #4f81bd">O cliente (client_impots_05b_web)</span></h2>
-<p>O cliente é modificado para ter em conta o novo formato de resposta. Utilizamos [simpleXML] para o processar:</p>
+<p>O cliente é alterado para ter em conta o novo formato da resposta. Utiliza-se [simpleXML] para processar a resposta:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// tax client</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// error management</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// cliente de impostos</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// gestão de erros</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span><span style="color:#008000">&quot;display_errors&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;off&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// ---------------------------------------------------------------------------------</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a class of utility functions</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// uma classe de funções utilitárias</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">class</span><span style="color:#008080"> </span><span style="color:#000000">Utilitaires</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// main -----------------------------------------------------</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// definition of constants</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// definição de constantes</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$DATA</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;data.txt&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$RESULTATS</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;resultats.txt&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// server data</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// dados do servidor</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$HOTE</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;localhost&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$PORT</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">80</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$urlServeur</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;/exemples-web/impots_05B_web.php&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">calculerImpot(</span><span style="color:#0000ff">$HOTE</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$PORT</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$urlServeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000000">&amp;</span><span style="color:#0000ff">$cookie</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$params</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// connects client to ($HOTE,$PORT,$urlServeur)</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// sends the $cookie cookie if it is non-empty. $cookie is passed by reference</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// sends $params to the server</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// exploits the result line</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// liga o cliente a ($HOTE,$PORT,$urlServeur)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// envia o cookie $cookie se este não estiver vazio. $cookie é passado por referência</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// envia $params para o servidor</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// processa a linha do resultado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// read line result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// leitura da linha do resultado</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$ligne</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">fgets(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1000</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// close the connection</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// encerra-se a ligação</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// result calculation</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// cálculo do resultado</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$xml</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">new</span><span style="color:#008080"> </span><span style="color:#000000">SimpleXMLElement(</span><span style="color:#0000ff">$ligne</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$erreur</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">isset</span><span style="color:#000000">(</span><span style="color:#0000ff">$xml</span><span style="color:#000000">-&gt;erreur)</span><span style="color:#008080"> </span><span style="color:#000000">?</span><span style="color:#008080"> </span><span style="color:#0000ff">$xml</span><span style="color:#000000">-&gt;erreur</span><span style="color:#008080"> </span><span style="color:#000000">:</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$impôt</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">isset</span><span style="color:#000000">(</span><span style="color:#0000ff">$xml</span><span style="color:#000000">-&gt;impot)</span><span style="color:#008080"> </span><span style="color:#000000">?</span><span style="color:#008080"> </span><span style="color:#0000ff">$xml</span><span style="color:#000000">-&gt;impot</span><span style="color:#008080"> </span><span style="color:#000000">:</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// return</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// retorno</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$impôt</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
@@ -877,11 +880,11 @@
 <ul>
   <li>linha 32: a resposta do servidor é lida. Trata-se de um documento XML.
   </li>
-  <li>linha 36: É criado um objeto SimpleXML a partir do documento XML recebido.
+  <li>linha 36: é criado um objeto SimpleXML a partir do documento XML recebido.
   </li>
-  <li>linha 37: qualquer mensagem de erro
+  <li>linha 37: a eventual mensagem de erro
   </li>
-  <li>linha 38: o valor do imposto, se houver
+  <li>linha 38: o eventual montante do imposto
   </li>
 </ul>
 

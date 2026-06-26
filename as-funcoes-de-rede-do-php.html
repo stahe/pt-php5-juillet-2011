@@ -12,13 +12,13 @@
         <meta name="author" content="Serge Tahé">
       
       
-        <link rel="canonical" href="https://stahe.github.io/pt-php5-juillet-2011/funcoes-de-rede-do-php.html">
+        <link rel="canonical" href="https://stahe.github.io/pt-php5-juillet-2011/as-funcoes-de-rede-do-php.html">
       
       
-        <link rel="prev" href="exercicio-de-calculo-de-impostos-com-mysql.html">
+        <link rel="prev" href="exercicio-impots-com-mysql.html">
       
       
-        <link rel="next" href="servidores-php.html">
+        <link rel="next" href="servidores-em-php.html">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>9. Funções de rede do PHP - Uma introdução ao PHP5 através de exemplos</title>
+        <title>9. As funções de rede do PHP - Uma introdução ao PHP5 através de exemplos</title>
       
     
     
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -92,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#9-funcoes-de-rede-do-php" class="md-skip">
+        <a href="#9-as-funcoes-de-rede-do-php" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              9. Funções de rede do PHP
+              9. As funções de rede do PHP
             
           </span>
         </div>
@@ -330,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="configurar-um-ambiente-de-desenvolvimento.html" class="md-nav__link">
+      <a href="instalacao-de-um-ambiente-de-trabalho.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Configurar um ambiente de desenvolvimento
+    2. Instalação de um ambiente de trabalho
   
 
     
@@ -357,14 +359,14 @@
   
   
     <li class="md-nav__item">
-      <a href="nocoes-basicas-de-php.html" class="md-nav__link">
+      <a href="nocoes-basicas-do-php.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Noções básicas de PHP
+    3. Noções básicas do PHP
   
 
     
@@ -384,14 +386,14 @@
   
   
     <li class="md-nav__item">
-      <a href="exercicio-de-aplicacao---calculo-de-impostos.html" class="md-nav__link">
+      <a href="exercicio-pratico---impots.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. Exercício de aplicação – Cálculo de impostos
+    4. Exercício prático - IMPOTS
   
 
     
@@ -411,14 +413,14 @@
   
   
     <li class="md-nav__item">
-      <a href="objetos.html" class="md-nav__link">
+      <a href="os-objetos.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Objetos
+    5. Os objetos
   
 
     
@@ -438,14 +440,14 @@
   
   
     <li class="md-nav__item">
-      <a href="exercicio-pratico---calculo-de-impostos-com-objetos-impots03.html" class="md-nav__link">
+      <a href="exercicio-pratico----impots-com-objetos-impots03.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Exercício Prático – Cálculo de Impostos com Objetos (impots_03)
+    6. Exercício prático — IMPOTS com objetos (impots_03)
   
 
     
@@ -465,14 +467,14 @@
   
   
     <li class="md-nav__item">
-      <a href="utilizacao-do-sgbd-mysql.html" class="md-nav__link">
+      <a href="utilizacao-do-sgbd-e-do-mysql.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. Utilização do SGBD MySQL
+    7. Utilização do SGBD e do MySql
   
 
     
@@ -492,14 +494,14 @@
   
   
     <li class="md-nav__item">
-      <a href="exercicio-de-calculo-de-impostos-com-mysql.html" class="md-nav__link">
+      <a href="exercicio-impots-com-mysql.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    8. Exercício de cálculo de impostos com MySQL
+    8. Exercício IMPOTS com MySQL
   
 
     
@@ -535,7 +537,7 @@
   <span class="md-ellipsis">
     
   
-    9. Funções de rede do PHP
+    9. As funções de rede do PHP
   
 
     
@@ -546,14 +548,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="funcoes-de-rede-do-php.html" class="md-nav__link md-nav__link--active">
+      <a href="as-funcoes-de-rede-do-php.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. Funções de rede do PHP
+    9. As funções de rede do PHP
   
 
     
@@ -579,10 +581,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#91-recuperacao-do-nome-ou-endereco-ip-de-uma-maquina-na-internet-inet_01" class="md-nav__link">
+  <a href="#91-obter-o-nome-ou-o-endereco-ip-de-um-computador-na-internet-inet_01" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9.1. Recuperação do nome ou endereço IP de uma máquina na Internet (inet_01)
+        9.1. Obter o nome ou o endereço IP de um computador na Internet (inet_01)
       
     </span>
   </a>
@@ -612,10 +614,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#94-um-segundo-programa-para-enviar-e-mail-inet_04" class="md-nav__link">
+  <a href="#94-um-segundo-programa-para-envio-de-e-mail-inet_04" class="md-nav__link">
     <span class="md-ellipsis">
       
-        9.4. Um segundo programa para enviar e-mail (inet_04)
+        9.4. Um segundo programa para envio de e-mail (inet_04)
       
     </span>
   </a>
@@ -637,14 +639,14 @@
   
   
     <li class="md-nav__item">
-      <a href="servidores-php.html" class="md-nav__link">
+      <a href="servidores-em-php.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    10. Servidores PHP
+    10. Servidores em PHP
   
 
     
@@ -664,14 +666,14 @@
   
   
     <li class="md-nav__item">
-      <a href="calculo-de-impostos-exercicio-com-um-servico-web-e-uma-arquitetura-de-tres-camadas.html" class="md-nav__link">
+      <a href="exercicio-impots-com-um-servico-web-e-uma-arquitetura-de-tres-camadas.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    11. Cálculo de impostos: Exercício com um serviço Web e uma arquitetura de três camadas
+    11. Exercício IMPOTS com um serviço WEB e uma arquitetura de três camadas
   
 
     
@@ -718,14 +720,14 @@
   
   
     <li class="md-nav__item">
-      <a href="calculo-de-impostos-exercicio-com-xml.html" class="md-nav__link">
+      <a href="exercicio-impots-com-xml.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    13. Cálculo de impostos: Exercício com XML
+    13. Exercício IMPOTS com XML
   
 
     
@@ -755,33 +757,33 @@
 
 
 
-<p><a id="refheading399301881943603"></a></p>
-<h1 id="9-funcoes-de-rede-do-php">9. <span style="color: #365f91">Funções de rede do PHP</span></h1>
-<p>Vamos agora discutir as funções de rede do PHP, que nos permitem realizar programação TCP/IP (Protocolo de Controlo de Transmissão/Protocolo de Internet).</p>
-<p><a id="refheading399321881943603"></a></p>
-<h2 id="91-recuperacao-do-nome-ou-endereco-ip-de-uma-maquina-na-internet-inet_01">9.1. <span style="color: #4f81bd">Recuperação do nome ou endereço IP de uma máquina na Internet (inet_01)</span></h2>
+<p><span id="refheading399301881943603" name="refheading399301881943603" class="odt-bookmark-anchor"></span></p>
+<h1 id="9-as-funcoes-de-rede-do-php">9. <span style="color: #365f91">As funções de rede do PHP</span></h1>
+<p>Passamos agora às funções de rede do PHP, que nos permitem realizar a programação do TCP / IP (Transfer Control Protocol / Internet Protocol).</p>
+<p><span id="refheading399321881943603" name="refheading399321881943603" class="odt-bookmark-anchor"></span></p>
+<h2 id="91-obter-o-nome-ou-o-endereco-ip-de-um-computador-na-internet-inet_01">9.1. <span style="color: #4f81bd">Obter o nome ou o endereço IP de um computador na Internet (inet_01)</span></h2>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// functions machine name &lt;--&gt; address IP machine</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// funciona como nome da máquina &lt;--&gt; endereço IP da máquina</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span><span style="color:#008000">&quot;display_errors&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;off&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// constants</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// constantes</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$HOTES</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#008000">&quot;istia.univ-angers.fr&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;www.univ-angers.fr&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;www.ibm.com&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;localhost&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;xx&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// IP addresses of $HOTES machines</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// endereços IP das máquinas de $HOTES</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">for</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">&lt;</span><span style="color:#008080"> </span><span style="color:#000000">count(</span><span style="color:#0000ff">$HOTES</span><span style="color:#000000">);</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#000000">++)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">getIPandName(</span><span style="color:#0000ff">$HOTES</span><span style="color:#000000">[</span><span style="color:#0000ff">$i</span><span style="color:#000000">]);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// end</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// fim</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">getIPandName(</span><span style="color:#0000ff">$nomMachine</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">//$nomMachine: name of the machine whose address is required IP: name of the machine whose address is required IP: name of the machine whose address is required</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// nomMachine--&gt;adresse IP</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">//$nomMachine: nome da máquina cujo endereço se pretende obter IP</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// nomMachine--&gt;endereço IP</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$ip</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">gethostbyname(</span><span style="color:#0000ff">$nomMachine</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$ip</span><span style="color:#008080"> </span><span style="color:#000000">!=</span><span style="color:#008080"> </span><span style="color:#0000ff">$nomMachine</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;ip[</span><span style="color:#0000ff">$nomMachine</span><span style="color:#008000">]=</span><span style="color:#0000ff">$ip</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// address IP --&gt; nomMachine</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// endereço IP --&gt; nomMachine</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#0000ff">$name</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">gethostbyaddr(</span><span style="color:#0000ff">$ip</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$name</span><span style="color:#008080"> </span><span style="color:#000000">!=</span><span style="color:#008080"> </span><span style="color:#0000ff">$ip</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">      </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;name[</span><span style="color:#0000ff">$ip</span><span style="color:#008000">]=</span><span style="color:#0000ff">$name</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
@@ -809,70 +811,71 @@
 </code></pre></div>
 <p><strong>Comentários</strong></p>
 <ul>
-  <li>Linha 4: Instruímos o sistema para não exibir erros de execução.
+  <li>linha 4: solicita-se que os erros de execução não sejam apresentados.
   </li>
 </ul>
 
-<p>As funções de rede do PHP são utilizadas na função <em>getIpandName</em> na linha 15.</p>
+<p>As funções de rede de PHP são utilizadas na função <em>getIpandName</em> da linha 15.</p>
 <ul>
-  <li>Linha 18: A função<i> gethostbyname($name) </i>recupera o endereço IP &quot;ip3.ip2.ip1.ip0&quot; da máquina denominada <i>$name</i>. Se a máquina <i>$name </i>não existir, a função devolve <i>$name </i>como resultado.
+  <li>linha 18: a função <i>gethostbyname($nom) </i>permite obter o endereço IP «ip3.ip2.ip1.ip0» da máquina denominada $nom. Se a máquina $nom não existir, a função devolve $nom como resultado.
   </li>
-  <li>Linha 22: A função<i> gethostbyaddr($ip) </i>recupera o nome do host da máquina com o endereço IP $ip no formato «ip3.ip2.ip1.ip0». Se a máquina <i>$ip </i>não existir, a função devolve <i>$ip </i>como resultado.
+  <li>linha 22: a função <i>gethostbyaddr($ip) </i>permite obter o nome do computador com o endereço $ip, na forma «ip3.ip2.ip1.ip0». Se a máquina $ip não existir, a função devolve $ip como resultado.
   </li>
 </ul>
-<p><a id="refheading399341881943603"></a>
-<a id="inet02"></a></p>
+
+<p><span id="refheading399341881943603" name="refheading399341881943603" class="odt-bookmark-anchor"></span>
+<span id="inet02" name="inet02" class="odt-bookmark-anchor"></span></p>
 <h2 id="92-um-cliente-web-inet_02">9.2. <span style="color: #4f81bd"><strong>Um cliente web (</strong> <strong>inet_02)</strong></span></h2>
-<p>Um script para recuperar o conteúdo da página inicial de um site.</p>
+<p>Um script que permite obter o conteúdo da página inicial de um site.</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// error management</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// gestão de erros</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span><span style="color:#008000">&quot;display_errors&quot;</span><span style="color:#000000">,</span><span style="color:#008000">&quot;off&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// otain the text HTML from URL</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// list of websites</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// obter o texto HTML de URL</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// lista de sites</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$SITES</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#008000">&quot;istia.univ-angers.fr&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;www.univ-angers.fr&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;www.ibm.com&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;xx&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// reading the index pages of the sites in the $SITES table</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// leitura das páginas de índice dos sites da tabela $SITES</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">for</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">&lt;</span><span style="color:#008080"> </span><span style="color:#000000">count(</span><span style="color:#0000ff">$SITES</span><span style="color:#000000">);</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#000000">++)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// read site index page $SITES[$i]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// leitura da página de índice do site $SITES[$i]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$résultat</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">getIndex(</span><span style="color:#0000ff">$SITES</span><span style="color:#000000">[</span><span style="color:#0000ff">$i</span><span style="color:#000000">]);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// result display</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// exibição do resultado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;</span><span style="color:#0000ff">$résultat</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">}</span><span style="font-style:italic;color:#808080">//for</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// end</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}//para</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// fim</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//-----------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">getIndex(</span><span style="color:#0000ff">$site</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// reads the URL $site/ and stores it in the $site.html file</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// create file $site.html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// lê o ficheiro URL $site/ e guarda-o no ficheiro $site.html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// criação do ficheiro $site.html</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$html</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">fopen(</span><span style="color:#008000">&quot;</span><span style="color:#0000ff">$site</span><span style="color:#008000">.html&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;w&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(!</span><span style="color:#0000ff">$html</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Erreur lors de la création du fichier </span><span style="color:#0000ff">$site</span><span style="color:#008000">.html&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// open a connection on port 80 of $site</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// abertura de uma ligação na porta 80 do $site</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$connexion</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">fsockopen(</span><span style="color:#0000ff">$site</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">80</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// return if error</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// retorno em caso de erro</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(!</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Echec de la connexion au site (</span><span style="color:#0000ff">$site</span><span style="color:#008000">,80) : </span><span style="color:#0000ff">$erreur</span><span style="color:#008000">&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// $connexion represents a bidirectional communication flow</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// between the client (this program) and the contacted web server</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// this channel is used for the exchange of orders and information</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the dialog protocol is HTTP</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the customer sends the get command to request URL /</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// syntaxe get URL HTTP/1.0</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// protocol HTTP headers must end with an empty line</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// $connexion representa um fluxo de comunicação bidirecional</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// entre o cliente (este programa) e o servidor web contactado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// este canal é utilizado para a troca de comandos e informações</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// o protocolo de comunicação é HTTP</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// o cliente envia o comando get para solicitar o URL /</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// sintaxe «get» URL HTTP/1.0</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// os cabeçalhos (headers) do protocolo HTTP devem terminar com uma linha em branco</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">fputs(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;GET / HTTP/1.0\n\n&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the server will now respond on channel $connexion. It will send all</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// then close the channel. The client therefore reads everything that arrives from $connexion</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// until the channel closes</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// o servidor vai agora responder no canal $connexion. Vai enviar todos</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// esses dados e, em seguida, encerrará o canal. O cliente lê, portanto, tudo o que chega de $connexion</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// até ao encerramento do canal</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">while</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$ligne</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">fgets(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1000</span><span style="color:#000000">))</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">fputs(</span><span style="color:#0000ff">$html</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$ligne</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the customer in turn closes the connection</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// o cliente, por sua vez, encerra a ligação</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// close file $html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// encerramento do ficheiro $html</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$html</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// return</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// retorno</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Transfert réussi de la page index du site </span><span style="color:#0000ff">$site</span><span style="color:#008000">&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
@@ -917,52 +920,53 @@
 <a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>As linhas 1–11 são os cabeçalhos HTTP da resposta do servidor
+  <li>as linhas 1 a 11 são os cabeçalhos HTTP da resposta do servidor
   </li>
-  <li>linha 1: o servidor instrui o cliente a redirecionar para o URL especificado na linha 8
+  <li>linha 1: o servidor solicita ao cliente que se redirecione para o endereço URL indicado na linha 8
   </li>
   <li>linha 2: data e hora da resposta
   </li>
   <li>linha 3: identidade do servidor web
   </li>
-  <li>Linha 4: Conteúdo enviado pelo servidor. Aqui, uma página HTML que começa na linha 13
+  <li>linha 4: conteúdo enviado pelo servidor. Neste caso, uma página HTML que começa na linha 13
   </li>
-  <li>Linha 12: A linha vazia que encerra os cabeçalhos HTTP
+  <li>linha 12: a linha vazia que encerra os cabeçalhos HTTP
   </li>
-  <li>Linhas 13–19: A página HTML enviada pelo servidor web.
+  <li>linhas 13-19: a página HTML enviada pelo servidor web.
   </li>
 </ul>
 
-<p><strong>Comentários de código:</strong></p>
+<p><strong>Comentários ao código:</strong></p>
 <ul>
-  <li>linha 7: a lista de URLs dos sites cujas páginas de índice pretendemos. Estas serão armazenadas no ficheiro de texto [sitename.html].
+  <li>linha 7: a lista de URLs dos sites cuja página inicial se pretende obter. Esta será guardada no ficheiro de texto [nomsite.html].
   </li>
-  <li>Linha 11: A função <i>getIndex </i>realiza o trabalho
+  <li>linha 11: a função <i>getIndex </i>executa a tarefa
   </li>
-  <li>linha 19: a função<i> getIndex($site) </i>descarrega a página raiz (ou página de índice) do site <i>$site </i>e armazena-a no ficheiro de texto <i>$site.html</i>.
+  <li>linha 19: a função <i>getIndex($site) </i>descarrega a página raiz (ou página inicial) do site $site e armazena-a no ficheiro de texto $site<i>.html</i>.
   </li>
-  <li>linha 27: a função<i> fsockopen($site,$port) </i>estabelece uma ligação com um serviço TCP/IP em execução na porta <i>$port </i>da máquina <i>$site</i>. Assim que a ligação cliente/servidor é estabelecida, muitos serviços TCP/IP trocam linhas de texto. É o que acontece aqui com o HTTP (HyperText Transfer Protocol). O fluxo de dados do servidor para o cliente pode então ser tratado como um ficheiro de texto. O mesmo se aplica ao fluxo de dados do cliente para o servidor.
+  <li>linha 27: a função <i>fsockopen($site,$port) </i>permite estabelecer uma ligação com um serviço TCP / IP que funciona na porta $port da máquina $site. Assim que a ligação cliente/servidor é estabelecida, vários serviços TCP / IP trocam linhas de texto. É o caso, neste caso, do protocolo HTTP (HyperText Transfer Protocol). O fluxo do servidor que chega ao cliente pode então ser tratado como um ficheiro de texto. O mesmo se aplica ao fluxo que parte do cliente para o servidor.
   </li>
-  <li>Linha 38: A função <i>fputs </i>permite que o cliente envie dados para o servidor. Aqui, a linha de texto enviada tem o seguinte significado: «Quero (GET) a página raiz (/) do site ao qual estou ligado. Estou a utilizar a versão 1.0 do HTTP.» A versão atual deste protocolo é a 1.1.
+  <li>linha 38: a função <i>fputs </i>permite ao cliente enviar dados para o servidor. Aqui, a linha de texto enviada tem o seguinte significado: «Quero (GET) a página raiz (/) do site à qual estou ligado. Estou a trabalhar com o protocolo HTTP, versão 1.0». A versão atual deste protocolo é a 1.1.
   </li>
-  <li>Linha 42: As linhas de texto da resposta do servidor podem ser lidas linha a linha utilizando um ciclo <i>while </i>e guardadas no ficheiro de texto [$site.html]. Assim que o servidor web enviar a página solicitada, encerra a sua ligação com o cliente. No lado do cliente, isto será detetado como um fim de ficheiro.
+  <li>linha 42: as linhas de texto da resposta do servidor podem ser lidas linha a linha com um ciclo <i>while </i>e guardadas no ficheiro de texto [$site.html]. Quando o servidor web envia a página que lhe foi solicitada, encerra a sua ligação com o cliente. Do lado do cliente, isto será detetado como um fim de ficheiro.
   </li>
 </ul>
-<p><a id="refheading399361881943603"></a></p>
+
+<p><span id="refheading399361881943603" name="refheading399361881943603" class="odt-bookmark-anchor"></span></p>
 <h2 id="93-um-cliente-smtp-inet_03">9.3. <span style="color: #4f81bd">Um cliente SMTP (inet_03)</span></h2>
-<p>Entre os protocolos TCP/IP, o SMTP (Simple Mail Transfer Protocol) é o protocolo de comunicação para o serviço de entrega de correio.</p>
+<p>Entre os protocolos TCP / IP, o SMTP (Protocolo de Transferência SendMail) é o protocolo de comunicação do serviço de envio de mensagens.</p>
 <p>Notas:</p>
 <ul>
-  <li>Num computador Windows com software antivírus, é provável que o antivírus impeça o script PHP de se ligar à porta 25 de um servidor SMTP. Por isso, deve desativar o antivírus. No caso do McAfee, por exemplo, pode fazer o seguinte:
+  <li>num computador Windows equipado com um antivírus, este irá provavelmente impedir que o script PHP se ligue à porta 25 de um servidor SMTP. Nesse caso, é necessário desativar o antivírus. Para o McAfee, por exemplo, pode proceder da seguinte forma:
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000643000001ECE58BB136.png" width="680" height="209" style="display:inline-block; margin:4px;width:17.997cm;height:5.525cm;" class="odt-zoomable" data-zoom-src="images/1000000000000643000001ECE58BB136.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000643000001ECE58BB136.png" width="680" height="209" style="display:inline-block; margin:4px;width:17.997cm;height:5.523cm;" class="odt-zoomable" data-zoom-src="images/1000000000000643000001ECE58BB136.png" /></td></tr></table>
 
 <ul>
-  <li>Em [1], abra a consola do VirusScan
+  <li>em [1], ativa-se a consola VirusScan
   </li>
-  <li>Em [2], interrompa o serviço [On-Access Protection]
+  <li>em [2], desativa-se o serviço [Protection lors de l&#x27;accès]
   </li>
   <li>em [3], o serviço está parado
   </li>
@@ -971,143 +975,143 @@
 <p>O script:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// client SMTP (SendMail Transfer Protocol) for sending a message</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// information is taken from a $INFOS file containing the following lines</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// line 1: smtp, sender, recipient</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// next lines: message text</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// sender: email sender</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// recipient: email recipient</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// smtp: name of smtp server to use</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// communication protocol SMTP client-server</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; client connects to smtp server port 25</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- server sends him a welcome message</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; customer sends command EHLO: machine name</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- server responds OK or not</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; customer sends mail order from: &lt;sender&gt;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- server responds OK or not</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; client sends the rcpt to command: &lt;recipient&gt;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- server responds OK or not</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; customer sends data order</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- server responds OK or not</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; client sends all the lines of its message and ends with a line containing the</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// single character .</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- server responds OK or not</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; customer sends quit order</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- server responds OK or not</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// server responses have the form xxx text where xxx is a 3-digit number. Any number xxx &gt;=500</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// indicates an error. The answer may consist of several lines all beginning with xxx except the last one</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// of the form xxx(space)</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// exchanged text lines must end with the characters RC(#13) and LF(#10)</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// data</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$INFOS</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;mail.txt&quot;</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="font-style:italic;color:#808080">// mail settings</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// retrieve mail parameters</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// cliente SMTP (Protocolo de Transferência SendMail) que permite enviar uma mensagem</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// as informações são extraídas de um ficheiro $INFOS que contém as seguintes linhas</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// linha 1: smtp, remetente, destinatário</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// linhas seguintes: o texto da mensagem</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// remetente: e-mail do remetente</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// destinatário: e-mail do destinatário</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// SMTP: nome do servidor SMTP a utilizar</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// protocolo de comunicação SMTP cliente-servidor</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; o cliente liga-se à porta 25 do servidor SMTP</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- o servidor envia-lhe uma mensagem de boas-vindas</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; o cliente envia o comando EHLO: nome do seu computador</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- o servidor responde com OK ou não</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; o cliente envia o comando mail from: &lt;remetente&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- o servidor responde com OK ou não</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; o cliente envia o comando rcpt para: &lt;destinatário&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- o servidor responde com OK ou não</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; o cliente envia o comando «data»</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- o servidor responde com OK ou não</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; o cliente envia todas as linhas da sua mensagem e termina com uma linha contendo o</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// único carácter.</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- o servidor responde com OK ou não</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// -&gt; o cliente envia o comando «quit»</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// &lt;- o servidor responde com OK ou não</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// as respostas do servidor têm o formato xxx texto, em que xxx é um número de 3 dígitos. Qualquer número xxx &gt;=500</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// indica um erro. A resposta pode conter várias linhas, todas começando por xxx, exceto a última</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// no formato xxx(espaço)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// as linhas de texto trocadas devem terminar com os caracteres RC(#13) e LF(#10)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// dados</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">$INFOS = &quot;mail.txt&quot;; // os parâmetros de envio do e-mail</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// recuperam-se os parâmetros do e-mail</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">list</span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$destinataire</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$message</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">getInfos(</span><span style="color:#0000ff">$INFOS</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// mistake?</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// erro?</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;</span><span style="color:#0000ff">$erreur</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Envoi du message [</span><span style="color:#0000ff">$smtpServer</span><span style="color:#008000">,</span><span style="color:#0000ff">$expéditeur</span><span style="color:#008000">,</span><span style="color:#0000ff">$destinataire</span><span style="color:#008000">]\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// sending mail in verbose mode</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// envio do e-mail em modo detalhado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$résultat</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">sendmail(</span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$destinataire</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$message</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Résultat de l&#x27;envoi : </span><span style="color:#0000ff">$résultat</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// end</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// fim</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//-----------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">getInfos(</span><span style="color:#0000ff">$fichier</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// returns information ($smtp,$expéditeur,$destinataire,$message) taken from text file $fichier</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// line 1: smtp, sender, recipient</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// next lines: message text</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// opening of $fichier</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// retorna as informações ($smtp,$expéditeur,$destinataire,$message) do ficheiro de texto $fichier</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// linha 1: smtp, remetente, destinatário</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// linhas seguintes: o texto da mensagem</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// abertura do ficheiro $fichier</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$infos</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">fopen(</span><span style="color:#0000ff">$fichier</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;r&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// does the $fichier file exist?</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// o ficheiro $fichier existe?</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(!</span><span style="color:#0000ff">$infos</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#008000">&quot;Le fichier </span><span style="color:#0000ff">$fichier</span><span style="color:#008000"> n&#x27;a pu être ouvert en lecture&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// read the 1st line</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// leitura da 1.ª linha</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$ligne</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">fgets(</span><span style="color:#0000ff">$infos</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1000</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// delete end-of-line mark</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// remoção do caractere de fim de linha</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$ligne</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">cutNewLineChar(</span><span style="color:#0000ff">$ligne</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// retrieving smtp, sender and recipient fields</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// recuperação dos campos smtp, remetente, destinatário</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$champs</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">explode(</span><span style="color:#008000">&quot;,&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$ligne</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// do we have the right number of fields?</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// Temos o número correto de campos?</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(count(</span><span style="color:#0000ff">$champs</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">!=</span><span style="color:#008080"> </span><span style="color:#000080">3</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#008000">&quot;La ligne 1 du fichier </span><span style="color:#0000ff">$fichier</span><span style="color:#008000"> (serveur smtp, expéditeur, destinataire) a un</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008000">nombre de champs incorrect&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// &quot;processing&quot; the recovered information</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// «processamento» das informações recuperadas</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">for</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#008080"> </span><span style="color:#000000">&lt;</span><span style="color:#008080"> </span><span style="color:#000000">count(</span><span style="color:#0000ff">$champs</span><span style="color:#000000">);</span><span style="color:#008080"> </span><span style="color:#0000ff">$i</span><span style="color:#000000">++)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#0000ff">$champs</span><span style="color:#000000">[</span><span style="color:#0000ff">$i</span><span style="color:#000000">]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">trim(</span><span style="color:#0000ff">$champs</span><span style="color:#000000">[</span><span style="color:#0000ff">$i</span><span style="color:#000000">]);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// field recovery</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// recuperação dos campos</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">list</span><span style="color:#000000">(</span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$destinataire</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#0000ff">$champs</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// read message</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// leitura da mensagem</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$message</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">while</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$ligne</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">fgets(</span><span style="color:#0000ff">$infos</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1000</span><span style="color:#000000">))</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#0000ff">$message</span><span style="color:#000000">.=</span><span style="color:#0000ff">$ligne</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$infos</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// return</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// retorno</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$destinataire</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$message</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//-----------------------------------------------------------------------</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">sendmail(</span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$destinataire</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$message</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$verbose</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// sends $message to smtp server $smtpserver from $expéditeur</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// for $destinataire. If $verbose=1, tracks client-server exchanges</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// retrieve the customer&#x27;s name</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// envia $message para o servidor SMTP $smtpserver em nome de $expéditeur</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// para $destinataire. Se $verbose=1, efetua um acompanhamento das trocas cliente-servidor</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// recupera-se o nome do cliente</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$client</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">gethostbyaddr(gethostbyname(</span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// open a connection on port 25 of $smtpServer</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// abertura de uma ligação na porta 25 de $smtpServer</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$connexion</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">fsockopen(</span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">25</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// return if error</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// retorno em caso de erro</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(!</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Echec de la connexion au site (</span><span style="color:#0000ff">$smtpServer</span><span style="color:#008000">,25)&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// $connexion represents a bidirectional communication flow</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// between the client (this program) and the smtp server contacted</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// this channel is used for the exchange of orders and information</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// after connection, the server sends a welcome message which is read as follows</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// $connexion representa um fluxo de comunicação bidirecional</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// entre o cliente (este programa) e o servidor SMTP contactado</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// este canal é utilizado para a troca de comandos e informações</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// após a ligação, o servidor envia uma mensagem de boas-vindas que é lida</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$erreur</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">sendCommand(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$verbose</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#0000ff">$erreur</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// cmde ehlo:</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// comando «ehlo»:</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$erreur</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">sendCommand(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;EHLO </span><span style="color:#0000ff">$client</span><span style="color:#008000">&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$verbose</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#0000ff">$erreur</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// cmde mail from:</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// comando mail from:</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$erreur</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">sendCommand(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;MAIL FROM: &lt;</span><span style="color:#0000ff">$expéditeur</span><span style="color:#008000">&gt;&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$verbose</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#0000ff">$erreur</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// cmde rcpt to:</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// comando rcpt to:</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$erreur</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">sendCommand(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;RCPT TO: &lt;</span><span style="color:#0000ff">$destinataire</span><span style="color:#008000">&gt;&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$verbose</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#0000ff">$erreur</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// cmde data</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// comando «data»</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$erreur</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">sendCommand(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;DATA&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$verbose</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#0000ff">$erreur</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// prepare message to send</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// it must contain the lines</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// From: expéditeur</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// To: recipient</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// blank line</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// Message</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// preparação da mensagem a enviar</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// deve conter as seguintes linhas</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// De: remetente</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// Para: destinatário</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// linha em branco</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// Mensagem</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// .</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$data</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;From: </span><span style="color:#0000ff">$expéditeur</span><span style="color:#008000">\r\nTo: </span><span style="color:#0000ff">$destinataire</span><span style="color:#008000">\r\n</span><span style="color:#0000ff">$message</span><span style="color:#008000">\r\n.\r\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$erreur</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">sendCommand(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$data</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$verbose</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">);</span></span></span>
@@ -1115,76 +1119,76 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#0000ff">$erreur</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// cmde quit</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// comando «quit»</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$erreur</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">sendCommand(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;QUIT&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$verbose</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#0000ff">$erreur</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// end</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// fim</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">fclose(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Message envoyé&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">sendCommand(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$commande</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$verbose</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$withRCLF</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// sends $commande to the $connexion channel</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// verbose mode if $verbose=1</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// if $withRCLF=1, adds sequence RCLF to exchange</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// data</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// envia $commande para o canal $connexion</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// modo detalhado se $verbose=1</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// se $withRCLF=1, adiciona a sequência RCLF à troca</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// dados</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$withRCLF</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#0000ff">$RCLF</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;\r\n&quot;</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">else</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#0000ff">$RCLF</span><span style="color:#000000">=</span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// send cmde if $commande not empty</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// envio de comando se $commande não estiver vazio</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$commande</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">fputs(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;</span><span style="color:#0000ff">$commande$RCLF</span><span style="color:#008000">&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// possible echo</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// eventual resposta</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$verbose</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">      </span><span style="color:#000000">affiche(</span><span style="color:#0000ff">$commande</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span><span style="font-style:italic;color:#808080">////if</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// reading response</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }//se</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// leitura da resposta</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$réponse</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">fgets(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1000</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// possible echo</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// eco eventual</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$verbose</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#000000">affiche(</span><span style="color:#0000ff">$réponse</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">2</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// error code recovery</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// recuperação do código de erro</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$codeErreur</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">substr(</span><span style="color:#0000ff">$réponse</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">3</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// last line of the answer?</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// última linha da resposta?</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">while</span><span style="color:#008080"> </span><span style="color:#000000">(substr(</span><span style="color:#0000ff">$réponse</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">3</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">==</span><span style="color:#008080"> </span><span style="color:#008000">&quot;-&quot;</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">     // reading response</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">     // leitura da resposta</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="color:#0000ff">$réponse</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">fgets(</span><span style="color:#0000ff">$connexion</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">1000</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">     // possible echo</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">     // eco eventual</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$verbose</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">      </span><span style="color:#000000">affiche(</span><span style="color:#0000ff">$réponse</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">2</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span><span style="font-style:italic;color:#808080">////while</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// answer completed</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// error returned by the server?</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }//enquanto</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// resposta concluída</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// erro devolvido pelo servidor?</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$codeErreur</span><span style="color:#008080"> </span><span style="color:#000000">&gt;=</span><span style="color:#008080"> </span><span style="color:#000080">500</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#000000">substr(</span><span style="color:#0000ff">$réponse</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">4</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// error-free return</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// retorno sem erro</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">affiche(</span><span style="color:#0000ff">$échange</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$sens</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// displays $échange on screen</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// if $sens=1 displays --&gt;$echange</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// if $sens=2 displays &lt;-- $échange without the last 2 characters RCLF</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// exibe $échange no ecrã</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// se $sens=1, exibe --&gt;$echange</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// se $sens=2, exibe &lt;-- $échange sem os dois últimos caracteres RCLF</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">switch</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$sens</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">case</span><span style="color:#008080"> </span><span style="color:#000080">1</span><span style="color:#000000">:</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">      </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;--&gt; [</span><span style="color:#0000ff">$échange</span><span style="color:#008000">]\n&quot;</span><span style="color:#000000">;</span></span></span>
@@ -1193,13 +1197,13 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">      </span><span style="color:#0000ff">$L</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">strlen(</span><span style="color:#0000ff">$échange</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">      </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;&lt;-- [&quot;</span><span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span><span style="color:#000000">substr(</span><span style="color:#0000ff">$échange</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000080">0</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$L</span><span style="color:#008080"> </span><span style="color:#000000">-</span><span style="color:#008080"> </span><span style="color:#000080">2</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span><span style="color:#008000">&quot;]\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">      </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span><span style="font-style:italic;color:#808080">////switch</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }//switch</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">cutNewLinechar(</span><span style="color:#0000ff">$ligne</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// delete the end-of-line mark from $ligne if it exists</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// elimina-se o marcador de fim de linha de $ligne, caso exista</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">...</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
@@ -1220,13 +1224,13 @@
 <a id="__codelineno-2-7" name="__codelineno-2-7"></a>ligne3
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>linha 1: [smtp.orange.fr] o servidor utilizado para enviar o e-mail, [serge.tahe@univ-angers.fr] o endereço do remetente, [serge.tahe@istia.univ-angers.fr] o endereço do destinatário
+  <li>linha 1: [smtp.orange.fr], o servidor utilizado para o envio do e-mail; [serge.tahe@univ-angers.fr], o endereço do remetente; [serge.tahe@istia.univ-angers.fr], o endereço do destinatário
   </li>
-  <li>linha 2: cabeçalhos da mensagem. Aqui existe apenas um, o assunto da mensagem.
+  <li>linha 2: cabeçalhos da mensagem. Aqui existe apenas um, o do assunto da mensagem.
   </li>
-  <li>linha 3: a linha em branco encerra os cabeçalhos da mensagem
+  <li>linha 3: a linha vazia encerra os cabeçalhos da mensagem
   </li>
-  <li>linhas 4–7: o corpo da mensagem
+  <li>linhas 4-7: o texto da mensagem
   </li>
 </ul>
 
@@ -1292,139 +1296,140 @@
 <ul>
   <li>linha 1: mensagem de acompanhamento da execução do script
   </li>
-  <li>linha 2: primeira resposta do servidor SMTP. Isto segue-se à ligação do cliente à porta 25 do servidor SMTP. As respostas do servidor são linhas no formato [xxx mensagem] ou [xxx-mensagem]. A primeira sintaxe indica que a resposta está completa. xxx é um código de estado. Um valor maior ou igual a 500 indica um erro. A segunda sintaxe indica que a resposta não está completa e que se seguirá outra linha.
+  <li>linha 2: primeira resposta do servidor SMTP. Segue-se à ligação do cliente à porta 25 do servidor SMTP. As respostas do servidor são linhas com o formato [xxx message] ou [xxx-message]. A primeira sintaxe indica que a resposta está concluída. xxx é um código de resultado. Um valor igual ou superior a 500 indica um erro. A segunda sintaxe indica que a resposta não está concluída e que se seguirá outra linha.
   </li>
-  <li>Linha 2: O servidor SMTP indica que está pronto para receber comandos
+  <li>linha 2: o servidor SMTP indica que está pronto para receber comandos
   </li>
-  <li>Linha 3: o cliente envia o comando [EHLO machineName], em que machineName é o nome de host da máquina na qual o cliente está a ser executado
+  <li>linha 3: o cliente envia o comando [EHLO nomDeMachine], em que nomDeMachine é o nome de Internet do computador no qual o cliente está a ser executado
   </li>
-  <li>Linhas 4–10: Resposta do servidor SMTP
+  <li>linhas 4-10: resposta do servidor SMTP
   </li>
-  <li>linha 11: o cliente envia o comando [MAIL FROM: &lt;remetente&gt;], que especifica o endereço de e-mail do remetente.
+  <li>linha 11: o cliente envia o comando [MAIL FROM: &lt;expéditeur&gt;], que indica o endereço de e-mail do remetente.
   </li>
-  <li>Linha 12: O servidor SMTP indica que aceita este endereço. Poderia tê-lo rejeitado se a sintaxe estivesse incorreta. Dito isto, não verifica se o endereço de e-mail existe realmente.
+  <li>linha 12: o servidor SMTP indica que aceita este endereço. Poderia tê-lo recusado se a sintaxe estivesse incorreta. No entanto, não verifica se o endereço de e-mail existe realmente.
   </li>
-  <li>linha 13: o cliente envia o comando [RCPT TO: &lt;destinatário&gt;], que especifica o endereço de e-mail do destinatário da mensagem.
+  <li>linha 13: o cliente envia o comando [RCPT TO: &lt;destinataire&gt;], que indica o endereço de e-mail do destinatário da mensagem.
   </li>
-  <li>Linha 14: O servidor SMTP responde que aceita este endereço. Mais uma vez, é realizada uma verificação de sintaxe.
+  <li>linha 14: o servidor SMTP responde que aceita esse endereço. Mais uma vez, é realizada uma verificação sintática.
   </li>
-  <li>Linha 15: O cliente envia o comando [DATA], que indica ao utilizador que as linhas que se seguem constituem o corpo da mensagem.
+  <li>linha 15: o cliente envia o comando [DATA], que indica ao utilizador que as linhas que se seguem constituem o corpo da mensagem.
   </li>
-  <li>Linha 16: O servidor responde que a mensagem pode ser enviada. A mensagem é uma sequência de linhas de texto que deve terminar com uma linha de um único caractere: um ponto.
+  <li>linha 16: o servidor responde que a mensagem pode ser enviada. Esta consiste numa sequência de linhas de texto que deve terminar com uma linha composta por um único carácter, um ponto.
   </li>
-  <li>Linhas 17–25: A mensagem enviada pelo cliente
+  <li>linhas 17-25: a mensagem enviada pelo cliente
   </li>
-  <li>Linhas 17–19: Os cabeçalhos da mensagem [From:, To:, Subject:] indicam o remetente, o destinatário e o assunto da mensagem, respetivamente.
+  <li>linhas 17-19: os cabeçalhos da mensagem [From:, To:, Subject:] servem para indicar, respetivamente, o remetente, o destinatário e o assunto da mensagem.
   </li>
-  <li>Linha 20: Uma linha vazia indicando o fim dos cabeçalhos
+  <li>linha 20: linha vazia que assinala o fim dos cabeçalhos
   </li>
-  <li>Linhas 21–23: o corpo da mensagem
+  <li>linhas 21-23: o corpo da mensagem
   </li>
-  <li>Linha 24: a linha composta por um único ponto que sinaliza o fim da mensagem.
+  <li>linha 24: a linha composta por um único ponto que assinala o fim da mensagem.
   </li>
-  <li>Linha 26: O servidor SMTP responde que aceita a mensagem
+  <li>linha 26: o servidor SMTP responde que aceita a mensagem
   </li>
-  <li>Linha 27: o cliente envia o comando [QUIT] para indicar que terminou
+  <li>linha 27: o cliente envia o comando [QUIT] para indicar que terminou
   </li>
-  <li>Linha 28: O servidor SMTP responde que irá encerrar a ligação com o cliente
-  </li>
-</ul>
-
-<p><strong>Comentários</strong> do código</p>
-<p>Não entraremos em muitos detalhes sobre o código do script, uma vez que este já foi amplamente comentado.</p>
-<ul>
-  <li>Linhas 48–80: A função que processa o ficheiro [infos.txt], que contém a mensagem a enviar juntamente com as informações necessárias para o seu envio. Ela devolve um array ($error, $smtpServer, $sender, $recipient, $message) com:
-    <ul>
-      <li><i>$error</i>: uma possível mensagem de erro; vazio caso contrário.
-      </li>
-      <li><i>$smtpServer</i>: o nome do servidor SMTP ao qual se deve ligar
-      </li>
-      <li><i>$sender</i>: o endereço de e-mail do remetente
-      </li>
-      <li><i>$recipient</i>: o endereço de e-mail do destinatário
-      </li>
-      <li><i>$message</i>: a mensagem a ser enviada. Além do corpo da mensagem, pode haver cabeçalhos.
-      </li>
-    </ul>
-  </li>
-  <li>linhas 84-157: a função <i>sendMail </i>é responsável pelo envio da mensagem. Os seus parâmetros são os seguintes:
-    <ul>
-      <li><i>$smtpServer</i>: o nome do servidor SMTP ao qual se deve ligar
-      </li>
-      <li><i>$sender</i>: o endereço de e-mail do remetente
-      </li>
-      <li><i>$recipient</i>: o endereço de e-mail do destinatário
-      </li>
-      <li><i>$message</i>: a mensagem a ser enviada.
-      </li>
-      <li><i>$verbose</i>: se definido como 1, indica que a comunicação com o servidor SMTP deve ser registada na consola.
-      </li>
-    </ul>
+  <li>linha 28: o servidor SMTP responde-lhe que vai encerrar a ligação que o liga ao cliente
   </li>
 </ul>
 
-<p>A função <em>sendMail</em> devolve uma mensagem de erro; devolve uma cadeia de caracteres vazia se não houver erros.</p>
+<p><strong>Comentários</strong> sobre o código</p>
+<p>Não iremos detalhar muito o código do script, uma vez que este já foi amplamente comentado.</p>
 <ul>
-  <li>Linha 88: recupera o nome Windows de um computador que executa o sistema operativo Windows.
-  </li>
-  <li>linha 99: vimos que o diálogo cliente/servidor segue este padrão:
+  <li>linhas 48-80: a função que processa o ficheiro [infos.txt], que contém a mensagem a enviar, bem como as informações necessárias para esse envio. Esta função devolve um array ($erreur, $smtpServer, $expéditeur, $destinataire, $messge) com:
     <ul>
-      <li>o cliente envia um comando numa única linha
+      <li>$erreur: uma eventual mensagem de erro; caso contrário, fica vazio.
       </li>
-      <li>resposta do servidor em uma ou mais linhas
+      <li>$smtpServer: o nome do servidor SMTP ao qual é necessário ligar-se
+      </li>
+      <li>$expéditeur: o endereço de e-mail do remetente
+      </li>
+      <li>$destinataire: o endereço de e-mail do destinatário
+      </li>
+      <li>$message: a mensagem a enviar. Para além do corpo da mensagem, podem existir cabeçalhos.
       </li>
     </ul>
   </li>
-  <li>Linhas 161–208: A função `<i>sendCommand` </i>aceita os seguintes parâmetros:
+  <li>linhas 84-157: a função <i>sendMail </i>encarrega-se de enviar a mensagem. Os seus parâmetros são os seguintes:
     <ul>
-      <li>$connection: o canal TCP/IP que liga o cliente ao servidor
+      <li>$smtpServer: o nome do servidor SMTP ao qual é necessário ligar-se
       </li>
-      <li>$command: o comando a ser enviado por este canal. A resposta do servidor a este comando será lida.
+      <li>$expéditeur: o endereço de e-mail do remetente
       </li>
-      <li>$verbose: definido como 1 indica que as trocas com o servidor SMTP devem ser exibidas na consola.
+      <li>$destinataire: o endereço de e-mail do destinatário
       </li>
-      <li>$withRCLF: definido como 1 indica que o marcador de fim de linha &quot;\r\n&quot; deve ser adicionado ao final do comando
+      <li>$message: a mensagem a enviar.
+      </li>
+      <li>$verbose: se for 1, indica que as trocas de dados com o servidor SMTP devem ser reproduzidas na consola.
       </li>
     </ul>
   </li>
-  <li>linha 173: o cliente envia o comando
+</ul>
+
+<p>A função <em>sendMail</em> devolve uma mensagem de erro, vazia caso não tenha ocorrido qualquer erro.</p>
+<ul>
+  <li>linha 88: permite obter o nome Windows de um computador que opera com o OS Windows.
   </li>
-  <li>linha 181: leitura da primeira linha da resposta do servidor SMTP na forma xxx texto ou xxx-texto. O último caso indica que o servidor tem outra linha para enviar. xxx é o código de erro enviado pelo servidor.
+  <li>linha 99: vimos que o diálogo cliente/servidor segue o seguinte padrão:
+    <ul>
+      <li>envio, pelo cliente, de um comando numa linha
+      </li>
+      <li>resposta do servidor numa ou mais linhas
+      </li>
+    </ul>
+  </li>
+  <li>linhas 161-208: a função <i>sendCommand </i>aceita os seguintes parâmetros:
+    <ul>
+      <li>$connexion: o canal TCP / IP que liga o cliente ao servidor
+      </li>
+      <li>$commande: o comando a enviar por este canal. A resposta do servidor a este comando será lida.
+      </li>
+      <li>$verbose: o valor 1 indica que as trocas de dados com o servidor SMTP devem ser reproduzidas na consola.
+      </li>
+      <li>$withRCLF: se for 1, indica que é necessário adicionar o caractere de fim de linha «\r\n» no final do comando
+      </li>
+    </ul>
+  </li>
+  <li>linha 173: envio do comando pelo cliente
+  </li>
+  <li>linha 181: leitura da primeira linha da resposta do servidor SMTP no formato xxx texto ou xxx-texto. Este último caso indica que o servidor tem outra linha para enviar. xxx é o código de erro enviado pelo servidor.
   </li>
   <li>linha 188 – recuperação do código de erro da resposta
   </li>
-  <li>linhas 191–199: leitura das outras linhas da resposta
+  <li>linhas 191-199: leitura das restantes linhas da resposta
   </li>
-  <li>linhas 203–204: se o código de erro for &gt;=500, então o servidor SMTP está a reportar um erro.
+  <li>linhas 203-204: se o código de erro for &gt;=500, significa que o servidor SMTP está a sinalizar um erro.
   </li>
 </ul>
-<h2 id="94-um-segundo-programa-para-enviar-e-mail-inet_04">9.4. <span style="color: #4f81bd">Um segundo programa para enviar e-mail (inet_04)</span></h2>
-<p>Este script tem a mesma funcionalidade que o anterior: enviar um e-mail. Utilizamos módulos da biblioteca PEAR para isso. Esta biblioteca contém dezenas de módulos que abrangem vários campos. Iremos utilizar os seguintes:</p>
+
+<h2 id="94-um-segundo-programa-para-envio-de-e-mail-inet_04">9.4. <span style="color: #4f81bd">Um segundo programa para envio de e-mail (inet_04)</span></h2>
+<p>Este script tem a mesma funcionalidade que o anterior: enviar um e-mail. Para tal, utilizamos módulos da biblioteca PEAR. Esta biblioteca inclui dezenas de módulos que abrangem diferentes áreas. Vamos utilizar os seguintes:</p>
 <ul>
-  <li><i>Net/SMTP</i>: um módulo para comunicação com um servidor SMTP
+  <li><i>Net/SMTP</i>: um módulo que permite comunicar com um servidor SMTP
   </li>
-  <li><i>Mail</i>: um módulo para gerir o envio de e-mail utilizando vários protocolos.
+  <li><i>Mail</i>: um módulo que permite gerir o envio de um e-mail de acordo com diferentes protocolos.
   </li>
-  <li><i>Mail/Mime</i>: um módulo para criar uma mensagem que pode incluir documentos anexados.
+  <li><i>Mail/Mime</i>: um módulo que permite criar uma mensagem que pode incluir documentos anexados.
   </li>
 </ul>
 
-<p>Para utilizar estes módulos, deve primeiro instalá-los na máquina que executa o script PHP. A instalação do pacote de software <em>WampServer</em> instalou um interpretador PHP. Dentro da sua estrutura de diretórios, pode instalar módulos PEAR.</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000020800000285D75E6C46.png" width="260" height="323" style="display:inline-block; margin:4px;width:6.879cm;height:8.534cm;" class="odt-zoomable" data-zoom-src="images/100000000000020800000285D75E6C46.png" /></td></tr></table>
+<p>Para dispor destes módulos, é necessário instalá-los primeiro na máquina que executa o script PHP. A instalação do pacote de software <em>WampServer</em> instalou um interpretador PHP. Na estrutura de diretórios deste, é possível instalar módulos PEAR.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000020800000285D75E6C46.png" width="260" height="323" style="display:inline-block; margin:4px;width:6.879cm;height:8.534cm;" class="odt-zoomable" data-zoom-src="images/100000000000020800000285D75E6C46.png" /></td></tr></table>
 
 <ul>
-  <li>em [1], o diretório de instalação do interpretador PHP
+  <li>em [1], a pasta de instalação do interpretador PHP
   </li>
-  <li>em [2], a pasta PEAR que irá conter os módulos PEAR a instalar
+  <li>em [2], a pasta PEAR que conterá os módulos PEAR que serão instalados
   </li>
-  <li>[3] é o ficheiro de lote [go-pear.bat] que inicializa a biblioteca PEAR
+  <li>em [3], o ficheiro de comandos [go-pear.bat] que inicializa a biblioteca PEAR
   </li>
 </ul>
 
-<p>Para inicializar a biblioteca PEAR, abra uma janela do DOS e execute o ficheiro [go-pear.bat]. Este script irá ligar-se ao site da biblioteca PEAR. Por isso, é necessária uma ligação à Internet.</p>
+<p>Para inicializar a biblioteca PEAR, abre-se uma janela DOS e executa-se o ficheiro [go-pear.bat]. Este script irá ligar-se ao site da biblioteca PEAR. É, portanto, necessária uma ligação à Internet.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>C:\serveursSGBD\wamp21\bin\PHP\php5.3.5&gt;go-pear.bat
 </code></pre></div>
-<p>Uma vez ligado ao site da biblioteca PEAR, o script irá descarregar vários itens. Entre estes encontra-se um novo script [pear.bat]. Iremos utilizar este script para instalar os vários módulos PEAR de que necessitamos. Este script é chamado com argumentos. Entre estes, o argumento [help] fornece uma lista de comandos aceites pelo script:</p>
+<p>Uma vez ligado ao site da biblioteca PEAR, o script irá descarregar vários elementos. Entre estes, encontra-se um novo script [pear.bat]. É com este script que iremos instalar os diferentes módulos PEAR de que necessitamos. Este script é chamado com argumentos. Entre estes, o argumento [help] permite obter uma lista dos comandos aceites pelo script:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">C</span><span class="p">:</span>\<span class="n">serveursSGBD</span>\<span class="n">wamp21</span>\<span class="nb">bin</span>\<span class="n">PHP</span>\<span class="n">php5</span><span class="mf">.3.5</span><span class="o">&gt;</span><span class="n">pear</span> <span class="n">help</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">Commands</span><span class="p">:</span>
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">build</span>                  <span class="n">Build</span> <span class="n">an</span> <span class="n">Extension</span> <span class="n">From</span> <span class="n">C</span> <span class="n">Source</span>
@@ -1483,7 +1488,7 @@
 <a id="__codelineno-5-56" name="__codelineno-5-56" href="#__codelineno-5-56"></a><span class="n">Type</span> <span class="s2">&quot;pear help shortcuts&quot;</span> <span class="n">to</span> <span class="nb">list</span> <span class="nb">all</span> <span class="n">command</span> <span class="n">shortcuts</span><span class="o">.</span>
 <a id="__codelineno-5-57" name="__codelineno-5-57" href="#__codelineno-5-57"></a><span class="n">Type</span> <span class="s2">&quot;pear help &lt;command&gt;&quot;</span> <span class="n">to</span> <span class="n">get</span> <span class="n">the</span> <span class="n">help</span> <span class="k">for</span> <span class="n">the</span> <span class="n">specified</span> <span class="n">command</span><span class="o">.</span>
 </code></pre></div>
-<p>O comando [install] é utilizado para instalar módulos PEAR. Pode obter ajuda sobre o comando [install]:</p>
+<p>O comando [install] permite instalar os módulos PEAR. É possível obter ajuda sobre o comando [install]:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">C</span><span class="p">:</span>\<span class="n">serveursSGBD</span>\<span class="n">wamp21</span>\<span class="nb">bin</span>\<span class="n">PHP</span>\<span class="n">php5</span><span class="mf">.3.5</span><span class="o">&gt;</span><span class="n">pear</span> <span class="n">help</span> <span class="n">install</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">pear</span> <span class="n">install</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span> <span class="p">[</span><span class="n">channel</span><span class="o">/</span><span class="p">]</span><span class="o">&lt;</span><span class="n">package</span><span class="o">&gt;</span> <span class="o">...</span>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">Installs</span> <span class="n">one</span> <span class="ow">or</span> <span class="n">more</span> <span class="n">PEAR</span> <span class="n">packages</span><span class="o">.</span>  <span class="n">You</span> <span class="n">can</span> <span class="n">specify</span> <span class="n">a</span> <span class="n">package</span> <span class="n">to</span> <span class="n">install</span> <span class="ow">in</span> <span class="n">four</span> <span class="n">ways</span><span class="p">:</span>
@@ -1532,7 +1537,7 @@
 <a id="__codelineno-6-46" name="__codelineno-6-46" href="#__codelineno-6-46"></a>  <span class="o">-</span><span class="n">p</span><span class="p">,</span> <span class="o">--</span><span class="n">pretend</span>
 <a id="__codelineno-6-47" name="__codelineno-6-47" href="#__codelineno-6-47"></a>        <span class="n">Only</span> <span class="nb">list</span> <span class="n">the</span> <span class="n">packages</span> <span class="n">that</span> <span class="n">would</span> <span class="n">be</span> <span class="n">downloaded</span>
 </code></pre></div>
-<p>Os módulos PEAR a instalar são: [Mail], [Mail_Mime], [Net_SMTP]. Na janela do Prompt de Comando, introduza os seguintes comandos, um após o outro:</p>
+<p>Os módulos PEAR a instalar são os seguintes: [Mail], [Mail_Mime], [Net_SMTP]. Na janela do DOS, introduza sucessivamente os seguintes comandos:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&lt;PHP_installDir&gt;pear install Mail
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>...
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>&lt;PHP_installDir&gt;pear install Mail_Mime
@@ -1540,8 +1545,8 @@
 <a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>&lt;PHP_installDir&gt;pear install Net_SMTP
 <a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>…
 </code></pre></div>
-<p>onde &lt;PHP_installDir&gt; é o diretório de instalação do interpretador PHP (C:\serveursSGBD\wamp21\bin\PHP\php5.3.5 neste exemplo)</p>
-<p>Pode ver os módulos instalados:</p>
+<p>onde &lt;PHP_installDir&gt; é a pasta de instalação do interpretador PHP (C:\serveursSGBD\wamp21\bin\PHP\php5.3.5 neste exemplo)</p>
+<p>É possível ver os módulos instalados:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>C:\serveursSGBD\wamp21\bin\PHP\php5.3.5&gt;pear list
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>INSTALLED PACKAGES, CHANNEL PEAR.php.NET:
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>=========================================
@@ -1558,70 +1563,70 @@
 <a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>XML_Util         1.2.1   stable
 </code></pre></div>
 <p>Os módulos estão instalados na pasta &lt;PHP_installDir&gt;/PEAR:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000020B000003164B6AAF0C.png" width="262" height="395" style="display:inline-block; margin:4px;width:6.92cm;height:10.453cm;" class="odt-zoomable" data-zoom-src="images/100000000000020B000003164B6AAF0C.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000020B000003164B6AAF0C.png" width="262" height="395" style="display:inline-block; margin:4px;width:6.92cm;height:10.451cm;" class="odt-zoomable" data-zoom-src="images/100000000000020B000003164B6AAF0C.png" /></td></tr></table>
 
-<p>Com os módulos PEAR instalados, o script PHP para enviar e-mails fica assim:</p>
+<p>Com os módulos PEAR instalados, o script PHP para o envio de e-mails passa a ser o seguinte:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// error management</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// gestão de erros</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span><span style="color:#008000">&quot;display_errors&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;off&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// modules</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// módulos</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span><span style="color:#008000">&quot;include_path&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;.;C:\serveursSGBD\wamp21\bin\PHP\php5.3.5\PEAR&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">require_once</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Mail.php&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">require_once</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Mail/Mime.php&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">require_once</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Net/SMTP.php&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// client SMTP (SendMail Transfer Protocol) for sending a message</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// information is taken from a $INFOS file containing the following lines</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// line 1: smtp, sender, recipient, attachment</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// next lines: message text</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// sender:email sender</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// recipient: email recipient</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// smtp: name of smtp server to use</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// attachment: name of the document to be attached</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// cliente SMTP (Protocolo de Transferência SendMail) que permite enviar uma mensagem</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// as informações são extraídas de um ficheiro $INFOS que contém as seguintes linhas</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// linha 1: smtp, remetente, destinatário, anexo</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// linhas seguintes: o texto da mensagem</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// remetente: e-mail do remetente</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// destinatário: e-mail do destinatário</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// smtp: nome do servidor SMTP a utilizar</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// anexo: nome do documento a anexar</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// data</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$INFOS</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;mail2.txt&quot;</span><span style="color:#000000">;</span><span style="color:#008080"> </span><span style="font-style:italic;color:#808080">// mail settings</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// retrieve mail parameters</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// dados</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">$INFOS = &quot;mail2.txt&quot;; // parâmetros de envio do e-mail</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// recuperam-se os parâmetros do e-mail</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">list</span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$destinataire</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$message</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$sujet</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$attachement</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">getInfos(</span><span style="color:#0000ff">$INFOS</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// mistake?</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// erro?</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$erreur</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;</span><span style="color:#0000ff">$erreur</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Envoi du message [</span><span style="color:#0000ff">$smtpServer</span><span style="color:#008000">,</span><span style="color:#0000ff">$expéditeur</span><span style="color:#008000">,</span><span style="color:#0000ff">$destinataire</span><span style="color:#008000">,</span><span style="color:#0000ff">$sujet</span><span style="color:#008000">, </span><span style="color:#0000ff">$attachement</span><span style="color:#008000">]\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// sending mail in verbose mode</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// envio do e-mail em modo detalhado</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$résultat</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">sendmail(</span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$destinataire</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$message</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$sujet</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$attachement</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Résultat de l&#x27;envoi : </span><span style="color:#0000ff">$résultat</span><span style="color:#008000">\n&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// end</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// fim</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">exit</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//-----------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">getInfos(</span><span style="color:#0000ff">$fichier</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// returns information ($smtp,$expéditeur,$destinataire,$message, $sujet, $attachement) taken from text file $fichier</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// line 1: smtp, sender, recipient, subject, attachment</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// next lines: message text</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// retorna as informações ($smtp,$expéditeur,$destinataire,$message, $sujet, $attachement) extraídas do ficheiro de texto $fichier</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// linha 1: smtp, remetente, destinatário, assunto, anexo</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// linhas seguintes: o texto da mensagem</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// return</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// retorno</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#008000">&quot;&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$destinataire</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$message</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$sujet</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$attachement</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//getInfos</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">//-----------------------------------------------------------------------</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">sendmail(</span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$destinataire</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$message</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$sujet</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$attachement</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// sends $message to smtp server $smtpserver from $expéditeur</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// for $destinataire. Document $attachement is attached to the message</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// message has subject $sujet</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// envia $message para o servidor SMTP $smtpserver em nome de $expéditeur</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// para $destinataire. O documento $attachement está anexado à mensagem</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">//; a mensagem tem como assunto $sujet</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// message</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// mensagem</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$msg</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">new</span><span style="color:#008080"> </span><span style="color:#000000">Mail_Mime();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$msg</span><span style="color:#000000">-&gt;setTXTBody(</span><span style="color:#0000ff">$message</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$msg</span><span style="color:#000000">-&gt;addAttachment(</span><span style="color:#0000ff">$attachement</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$headers</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#0000ff">$msg</span><span style="color:#000000">-&gt;headers(</span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#008000">&quot;From&quot;</span><span style="color:#008080"> </span><span style="color:#000000">=&gt;</span><span style="color:#008080"> </span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;To&quot;</span><span style="color:#008080"> </span><span style="color:#000000">=&gt;</span><span style="color:#008080"> </span><span style="color:#0000ff">$destinataire</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Subject&quot;</span><span style="color:#008080"> </span><span style="color:#000000">=&gt;</span><span style="color:#008080"> </span><span style="color:#0000ff">$sujet</span><span style="color:#000000">));</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// shipping</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// envio</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$mailer</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000000">&amp;Mail::factory(</span><span style="color:#008000">&quot;smtp&quot;</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">array</span><span style="color:#000000">(</span><span style="color:#008000">&quot;host&quot;</span><span style="color:#008080"> </span><span style="color:#000000">=&gt;</span><span style="color:#008080"> </span><span style="color:#0000ff">$smtpServer</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#008000">&quot;port&quot;</span><span style="color:#008080"> </span><span style="color:#000000">=&gt;</span><span style="color:#008080"> </span><span style="color:#000080">25</span><span style="color:#000000">));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$envoi</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#0000ff">$mailer</span><span style="color:#000000">-&gt;send(</span><span style="color:#0000ff">$expéditeur</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$headers</span><span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#0000ff">$msg</span><span style="color:#000000">-&gt;get());</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">if</span><span style="color:#008080"> </span><span style="color:#000000">(</span><span style="color:#0000ff">$envoi</span><span style="color:#008080"> </span><span style="color:#000000">===</span><span style="color:#008080"> </span><span style="font-weight:bold;color:#000000">TRUE</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
@@ -1630,11 +1635,11 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">return</span><span style="color:#008080"> </span><span style="color:#0000ff">$envoi</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">}</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">function</span><span style="color:#008080"> </span><span style="color:#000000">cutNewLinechar(</span><span style="color:#0000ff">$ligne</span><span style="color:#000000">)</span><span style="color:#008080"> </span><span style="color:#000000">{</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// delete the end-of-line mark from $ligne if it exists</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// elimina-se o marcador de fim de linha de $ligne, caso exista</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#000000">…</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
@@ -1660,52 +1665,52 @@
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>Résultat de l&#39;envoi : Message envoyé
 </code></pre></div>
 <p><strong>Comentários</strong></p>
-<p>Este script difere do anterior apenas na utilização da função <em>sendmail</em>. Descrevemos esta função abaixo:</p>
+<p>O script difere do anterior apenas pela sua função <em>sendmail</em>. Descrevemos esta função a seguir:</p>
 <ul>
-  <li>Linha 6: Os scripts PHP para os módulos PEAR foram instalados num diretório que o interpretador PHP não pesquisa por padrão. Para garantir que o interpretador consiga encontrar os módulos PEAR, especificamos manualmente os diretórios que ele deve pesquisar. É possível modificar certos parâmetros de configuração do interpretador PHP em tempo de execução. Esta modificação é visível apenas para o script que a efetua e apenas durante o período da sua execução. A configuração padrão do interpretador PHP pode ser encontrada no ficheiro <i>&lt;PHP_installdir&gt;/PHP.ini</i>. Este ficheiro contém linhas do tipo 
+  <li>linha 6: os scripts PHP dos módulos PEAR foram instalados num diretório que, por predefinição, não é explorado pelo interpretador PHP. Para que este encontre os módulos PEAR, definimos nós próprios as pastas que o interpretador PHP deve explorar. É possível alterar, durante a execução, determinados parâmetros de configuração do interpretador PHP. Esta alteração só é visível para o script que a efetua e apenas durante o período da sua execução. A configuração por predefinição do interpretador PHP pode ser encontrada no ficheiro <i>&lt;PHP_installdir&gt;/PHP.ini</i>. Este ficheiro contém linhas com o seguinte formato 
   </li>
 </ul>
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>clé=valeur
 </code></pre></div>
-<p>O valor da chave pode ser modificado em tempo de execução utilizando a função <em>ini_set(key, new_value)</em>. A chave utilizada para especificar o caminho de pesquisa para funções e classes PHP referenciadas pelo script é <em>&#x27;include_path</em>&#x27;. Aqui, adicionamos tanto o diretório do script (.) como o diretório PEAR dentro do diretório de instalação do interpretador PHP ao caminho de pesquisa.</p>
+<p>O valor da chave pode ser alterado durante a execução através da função <em>ini_set(chave, nouvelle_valeur)</em>. A chave para especificar o caminho de pesquisa pelo interpretador das funções e classes PHP referenciadas pelo script é <em>«include_path</em>». Aqui, incluímos no caminho de pesquisa tanto a pasta do script (.) como a pasta PEAR da pasta de instalação do interpretador PHP.</p>
 <ul>
-  <li>Linhas 7–9: Os scripts PHP para o envio de e-mail são carregados.
+  <li>linhas 7-9: os scripts PHP para envio de e-mail são carregados.
   </li>
-  <li>linha 50: a função <i>sendmail</i>, que trata do envio do e-mail. Os seus parâmetros são os seguintes:
+  <li>linha 50: a função <i>sendmail</i>, responsável pelo envio do e-mail. Os seus parâmetros são os seguintes:
   </li>
 </ul>
 
 <ol>
     <ul>
-      <li><i>$smtpServer</i>: o nome do servidor SMTP ao qual se deve ligar
+      <li>$smtpServer: o nome do servidor SMTP ao qual é necessário ligar-se
       </li>
-      <li><i>$sender</i>: o endereço de e-mail do remetente
+      <li>$expéditeur: o endereço de e-mail do remetente
       </li>
-      <li><i>$recipient</i>: o endereço de e-mail do destinatário
+      <li>$destinataire: o endereço de e-mail do destinatário
       </li>
-      <li><i>$message</i>: a mensagem a enviar.
+      <li>$message: a mensagem a enviar.
       </li>
-      <li><i>$subject</i>: o assunto da mensagem
+      <li>$sujet: o assunto da mensagem
       </li>
-      <li><i>$attachment</i>: o nome do documento a anexar à mensagem
+      <li>$attachement: o nome do documento a anexar à mensagem
       </li>
     </ul>
 </ol>
 
-<p>A função <em>sendMail</em> devolve uma mensagem de erro; fica vazia se não ocorrer nenhum erro.</p>
+<p>A função <em>sendMail</em> devolve uma mensagem de erro, vazia caso não tenha ocorrido qualquer erro.</p>
 <ul>
-  <li>Linha 56: criação de uma mensagem <i>Mail_Mime</i>. Esta mensagem é composta por cabeçalhos (De, Para, Assunto) e um corpo (a própria mensagem)
+  <li>linha 56: criação de uma mensagem do tipo <i>Mail_Mime</i>. Esta mensagem é composta por cabeçalhos (From, To, Subject) e por um corpo (a própria mensagem)
   </li>
-  <li>Linha 57: O corpo da mensagem <i>Mail_Mime </i>é definido.
+  <li>linha 57: define-se o corpo da mensagem <i>Mail_Mime</i>.
   </li>
-  <li>linha 58: anexar um documento à mensagem
+  <li>linha 58: anexa-se um documento à mensagem
   </li>
-  <li>Linha 59: Definição dos cabeçalhos (From, To, Subject) da mensagem <i>Mail_Mime</i>
+  <li>linha 59: definem-se os cabeçalhos (From, To, Subject) da mensagem <i>Mail_Mime</i>
   </li>
-  <li>linha 61: cria a classe responsável pelo envio da mensagem <i>Mail_Mime. </i>O primeiro parâmetro do método é o nome do protocolo a utilizar, neste caso o protocolo SMTP. O segundo parâmetro é uma matriz que especifica o nome e a porta do serviço SMTP a utilizar
+  <li>linha 61: cria-se a classe responsável pelo envio da mensagem <i>Mail_Mime. </i>O primeiro parâmetro do método é o nome do protocolo a utilizar, neste caso o protocolo SMTP. O segundo parâmetro é um array que define o nome e a porta do serviço SMTP a utilizar
   </li>
-  <li>linha 62: envio da mensagem. O método send recebe três parâmetros: o endereço do remetente, os cabeçalhos da mensagem <i>Mail_Mime </i>e o corpo da mensagem <i>Mail_Mime</i>. A função send retorna o valor booleano TRUE se a mensagem foi enviada com sucesso, ou uma mensagem de erro caso contrário.
+  <li>linha 62: envio da mensagem. O método send recebe três parâmetros: o endereço do remetente, os cabeçalhos da mensagem <i>Mail_Mime </i>e o corpo da mensagem <i>Mail_Mime</i>. A função «send» devolve o valor booleano TRUE se o envio tiver sido bem-sucedido; caso contrário, devolve uma mensagem de erro.
   </li>
 </ul>
 
